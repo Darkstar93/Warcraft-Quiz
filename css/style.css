@@ -1,17 +1,29 @@
-body{
-font-family: sans-serif;
+body {
+background-image: url("../images/wowimg.jpg");
 background-color: gray;
-
-;}
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+}
 
 #wrapper { 
-width:300px;
-margin:40px auto;
+	background-image: url("../images/Empty_Quest_Log.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 550px 650px;
+width:650px;
+height: 800px;
+margin: 10px auto;
+word-wrap: break-word;
+
 }
 
 h1{
 text-align:center;
-color: white;
+font-size: 82px;
+color: #ffff33;
+padding: 0px;
+margin: 0px;
 }
 
 .start {
@@ -21,10 +33,12 @@ background: #2ECC71;
     letter-spacing: 1px;
     padding: 10px 0;
 border-radius: 50px;
-border: 6px solid black;
+border: 3px solid black;
 color: #fff;
-width:100%;
+width:50%;
 font-weight: 700;
+margin: 20px;
+font-weight: 50px;
 }
 
 .start:active {
@@ -34,4 +48,63 @@ color: #17954c;
 
 .start:hover {
 background: #24b662;
+}
+
+.next {
+background: #FCAD26;
+    color: #FFFFFF;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 10px 0;
+border-radius: 50px;
+border: 3px solid black;
+color: #fff;
+margin-top:20px;
+display:block;
+width:100%;
+font-weight: 700;
+}
+
+.next:active {
+border-color: #F58500;
+color: #222;
+}
+
+.next:hover {
+background: #F29E0D;
+}
+
+.reset {
+border: none;
+background: none;
+cursor: pointer;
+padding: 10px 40px;
+display: inline-block;
+margin: 15px 30px;
+text-transform: uppercase;
+letter-spacing: 1px;
+outline: none;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+border-radius: 40px;
+background: none repeat scroll 0 0 #CB4E4E;
+box-shadow: 0 6px #AB3C3C;
+color: #FFFFFF;
+}
+
+.reset:hover {
+box-shadow: 0 4px #ab3c3c;
+top: 2px;
+}
+
+.reset:active {
+box-shadow: 0 0 #ab3c3c;
+top: 6px;
+}
+
+
+#questions {
+	color: white;
+	word-wrap: break-word;
 }
