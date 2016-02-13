@@ -14,7 +14,10 @@ background-position: center;
 width:650px;
 height: 800px;
 margin: 10px auto;
-word-wrap: break-word;
+padding-bottom: 20px;
+margin-bottom: 20px;
+position: relative;
+
 
 }
 
@@ -33,12 +36,13 @@ background: #2ECC71;
     letter-spacing: 1px;
     padding: 10px 0;
 border-radius: 50px;
+position: center;
 border: 3px solid black;
 color: #fff;
 width:50%;
-font-weight: 700;
-margin: 20px;
-font-weight: 50px;
+
+margin: 20px auto;
+
 }
 
 .start:active {
@@ -61,7 +65,7 @@ border: 3px solid black;
 color: #fff;
 margin-top:20px;
 display:block;
-width:100%;
+width:90%;
 font-weight: 700;
 }
 
@@ -107,4 +111,10 @@ top: 6px;
 #questions {
 	color: white;
 	word-wrap: break-word;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: center;
+	letter-spacing: 1px;
+		
 }
