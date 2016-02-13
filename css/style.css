@@ -1,0 +1,37 @@
+body{
+font-family: sans-serif;
+background-color: gray;
+
+;}
+
+#wrapper { 
+width:300px;
+margin:40px auto;
+}
+
+h1{
+text-align:center;
+color: white;
+}
+
+.start {
+background: #2ECC71;
+    color: #FFFFFF;
+    cursor: pointer;
+    letter-spacing: 1px;
+    padding: 10px 0;
+border-radius: 50px;
+border: 6px solid black;
+color: #fff;
+width:100%;
+font-weight: 700;
+}
+
+.start:active {
+border-color: #17954c;
+color: #17954c;
+}
+
+.start:hover {
+background: #24b662;
+}
