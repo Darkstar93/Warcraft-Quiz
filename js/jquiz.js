@@ -33,8 +33,8 @@ $(document).ready(function () {
             correct: 0
         }, {
             q: "Which Orc Warchief first drank the Blood of Mannoroth?",
-            s: ["Garrosh Hellscream", "Thrall", "Ogrim Doomhammer", "Grommash Hellscream"],
-            a: "Grommash Hellscream",
+            s: ["Garrosh", "Thrall", "Durotan", "Gromm Hellscream"],
+            a: "Gromm Hellscream",
             correct: 0
         }, {
             q: "Which fallen human Kingdom resided in Arathi Highlands?",

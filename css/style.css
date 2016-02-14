@@ -16,7 +16,8 @@ height: 800px;
 margin: 10px auto;
 padding-bottom: 20px;
 margin-bottom: 20px;
-position: relative;
+
+
 
 
 }
@@ -27,6 +28,7 @@ font-size: 82px;
 color: #ffff33;
 padding: 0px;
 margin: 0px;
+text-shadow: 4px 3px  #804000;
 }
 
 .start {
@@ -36,12 +38,14 @@ background: #2ECC71;
     letter-spacing: 1px;
     padding: 10px 0;
 border-radius: 50px;
-position: center;
+position: relative;
 border: 3px solid black;
 color: #fff;
 width:50%;
-
+display: block;
 margin: 20px auto;
+top: 30px;
+left: 8px;
 
 }
 
@@ -109,12 +113,19 @@ top: 6px;
 
 
 #questions {
-	color: white;
+	color: black;
 	word-wrap: break-word;
 	width: 70%;
 	margin: 0 auto;
 	margin-top: 20px;
-	position: center;
-	letter-spacing: 1px;
+	position: relative;
+	letter-spacing: 2px;
+	display: block;
+	top: 100px;
 		
+}
+
+.mark {
+	height: 200px;
+	width: 200px;
 }
