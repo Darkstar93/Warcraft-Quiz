@@ -17,7 +17,7 @@ $(document).ready(function () {
             a: "Nozdormu",
             correct: 0
         }, {
-            q: "As of Legion who is the current Warchief of the Horde?",
+            q: "By the end of the Legion Expansion, who was Warchief of the Horde?",
             s: ["Sylvanis", "Vol'jin", "Garrosh", " Thrall"],
             a: "Sylvanis",
             correct: 0
