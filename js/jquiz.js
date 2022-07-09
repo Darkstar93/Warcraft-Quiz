@@ -5,8 +5,8 @@ $(document).ready(function () {
     $(".start").click(trivia);
 
     function trivia() {
-        var scoreAry = [];
-        var questions = [{
+        const scoreAry = [];
+        const questions = [{
             q: "What was the name of the Dreadlord that lured Arthas to Northrend?",
             s: ["Varimathras", "Mal'Ganis", "Tichondrius", "Anetheron"],
             a: "Mal'Ganis",
@@ -58,22 +58,22 @@ $(document).ready(function () {
             correct: 0
         }];
 
-        var counter = questions.length;
+        let counter = questions.length;
 
         //This grabs the question and answer data from the questions array and appends it to the #questions div:
         function createQuestion(questions) {
-            for (var i = 0; i < questions.length; i++) {
+            for (let i = 0; i < questions.length; i++) {
                 $(".start").hide();
                 $("#questions").append('<form id="' + i + '" class="center-text"><p>Question ' + (i + 1) + ' of ' + questions.length + '</p><h3 class="question">' + questions[i].q + '</h3>' + radioButtons(questions[i].s, i) + '<button type="submit" class="next">NEXT &#8594;</button></p></form>');
             }
             //This hides all except the first question:
-            for (var k = questions.length - 1; k > 0; k--) {
+            for (let k = questions.length - 1; k > 0; k--) {
                 $('#' + k).hide();
             }
         }
         //This grabs the answer choices from the questions array and returns them to createQuestion():
         function radioButtons(ary, qNum) {
-            var answers = [];
+            const answers = [];
             for (i = 0; i < ary.length; i++) {
                 answers.push('<label><input type="radio" name="' + qNum + '" value="' + ary[i] + '">' + ary[i] + '</label>');
             }
@@ -101,8 +101,8 @@ $(document).ready(function () {
         
         $(".next").click(function (event) {
             event.preventDefault(); //This stops the form from submitting
-            var qNum = $(this).closest("form").attr("id"); //This gives us the question number
-            var userInput = $('input[name=' + qNum + ']:radio:checked').val(); //This grabs the user's selected answer
+            let qNum = $(this).closest("form").attr("id"); //This gives us the question number
+            let userInput = $('input[name=' + qNum + ']:radio:checked').val(); //This grabs the user's selected answer
             if (counter > 1) {
                 checkAnswer(userInput, qNum, questions);
                 $("#" + qNum).hide();
